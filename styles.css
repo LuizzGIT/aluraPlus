@@ -1,0 +1,169 @@
+:root{
+    --cor-background-padrao: #00030c;
+    --cor-titulo: #FFFFFF;
+    --cor-paragrafo: #C0C0C0;
+    --cor-botao-zul: #167df7;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-hover: #588de2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-background-padrao);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+   
+}
+.container__titulo{
+    color: var(--cor-titulo);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.aviso{
+    font-size: 12px;
+    color: var(--cor-paragrafo);
+}
+
+.container{
+   
+    height: 100vh; /* 100% da altura da tela */
+    display: grid; /* Cria um grid */
+    grid-template-columns: 50% 50%; /* Divide a tela em duas colunas */
+    
+}
+
+.principal{
+    background-image: url('img/Background.png'); /* Pega a imagem do background, como fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; /* Ajusta a imagem ao tamanho do container */
+    align-items: center; /* Alinha o conteúdo ao centro */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.container__botao{
+    background-color: var(--cor-botao-zul);
+    color: var(--cor-titulo);
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 8px;
+    display: block; 
+    
+    margin-bottom: 1em;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-titulo);
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    color: var(--cor-titulo);
+    font-weight: 700;
+    font-size: 48px;
+    font-family: var(--fonte-principal);
+}
+
+.descricao__texto{
+    color: var(--cor-paragrafo);
+    font-size: 16px;
+    margin-top: 0.5m;
+    
+}
+
+.botao__terciario{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos__titulo{
+    color: var(--cor-titulo);
+    font-weight: 700;
+    font-size: 48px;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 10em;
+    
+   
+}
+
+.dispositivos__item{
+    list-style: none;
+    color: var(--cor-titulo);
+    margin: 0.5em 0;
+    
+}
+
+.rodape{
+    margin: 5em 3em;
+    text-align: center; /* Alinha o texto ao centro por ser o pai de todos, por isso a imagem alinha pois o pai que esta com o text-align não o filho */
+}
+
+.rodape__logo{
+    margin-bottom: 2em;
+}
+
+.rodape__lista{
+    display: flex; /* Cria um flexbox */
+    justify-content: center; /* Alinha os itens ao centro */
+    list-style: none; /* Remove a bolinha da lista */
+    margin-top: 1em;
+}
+
+.lista__link a{
+    color: var(--cor-titulo);
+    margin: 0.5em;
+    text-decoration: none;
+    font-size: 1em;
+
+}
+
+.rodape__texto{
+    color: var(--cor-paragrafo);
+    font-size: 14px;
+    margin-top: 1.5em;
+}
+
+.lista__link a:hover{
+    color: var(--cor-botao-zul);
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-hover);
+    color: var(--cor-background-padrao);
+}
